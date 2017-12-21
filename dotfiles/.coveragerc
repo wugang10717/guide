@@ -8,3 +8,4 @@ omit =
 
 [coverage]
 always-on = True
+
