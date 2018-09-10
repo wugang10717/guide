@@ -32,7 +32,7 @@ and `sourcing` the profile. You can now swap between your virtualenvs with a sim
 
 This is really all you need to start hacking on STMS projects. Simply ensure you have a virtualenv associated with a particular git repo before you start working. For example, if you were to begin developing in STMS-Eos, you would do the following:
 
-		git clone git@github.corp.ebay.com:STMS/Eos.git
+		git clone git@github.com:STMS/Eos.git
 		mkvirtualenv -a /path/to/Eos eos
 		cd Eos
 		pip install -r requirements/dev-requirements.txt
@@ -895,7 +895,7 @@ While you are more than welcome to write your tests using the `unittest` module 
 
 As stated above, ensure that a `.coveragerc` is contained in the root of your project repo. We will use this file for enabling a code coverage report when running tests. Ensure that both `nose2` and `cov-core` are installed and listed in your `developer-requirements.txt`. When writing tests and submitting a pull request for a new feature or bug fix, ensure that your test coverage is at least 90% (but strive for 100%). You can check your test coverage by running: `nose2 --config .coveragerc`.
 
-For an example in STMS of how to write some tests (that include mocks), look at the `test/` directory in [STMS-Eos](https://github.corp.ebay.com/STMS/Eos/tree/master/test).
+For an example in STMS of how to write some tests (that include mocks), look at the `test/` directory in [STMS-Eos](https://github.com/STMS/Eos/tree/master/test).
 
 Here are some basic rules for writing tests:
 
@@ -921,6 +921,6 @@ It's very important to keep your commits organized by feature or fix and their c
 
 ## Wrap Up
 
-Hopefully, this guide will serve as a helpful introduction to development in STMS. If you have any questions or need help with anything, drop a line on the `#stms-dev` channel in _ebay-ssi.slack_ and @mmedal or @esalisbury will be more than happy to help.
+Hopefully, this guide will serve as a helpful introduction to development in STMS. If you have any questions or need help with anything, drop a line on the `#stms-dev` channel in slack_ and @mmedal or @esalisbury will be more than happy to help.
 
 **Happy Hacking!**
